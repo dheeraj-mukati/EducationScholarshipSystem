@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:component-scan base-package="com.ess.controller" />
+<context:component-scan base-package="com.ess.service" />
+<context:component-scan base-package="com.ess.dao" />
+<context:component-scan base-package="com.ess.entity" />
+<context:component-scan base-package="com.ess.validator" />
+
+<bean id="userValidator" class="com.ess.validator.UserValidator" />
+
+<bean id="loginValidator" class="com.ess.validator.LoginValidator" />
+
+<bean id="instituteValidator" class="com.ess.validator.InstituteValidator" />
+
+<bean id="questionValidator" class="com.ess.validator.QuestionValidator" />
+
+<!-- <context:component-scan base-package="com.diaspark.controller" />
+<context:component-scan base-package="com.diaspark.controller.impl" />
+<context:component-scan base-package="com.diaspark.service" />
+<context:component-scan base-package="com.diaspark.service.impl" />
+<context:component-scan base-package="com.diaspark.dao" />
+<context:component-scan base-package="com.diaspark.dao.impl" /> -->
+<!--<context:component-scan base-package="com.diaspark.entity" />
+
+--><!--<context:component-scan base-package="com.diaspark.domainobject" />
+
+<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" p:basename="messages" /> 
+<bean id="createUserValidator" class="com.diaspark.validator.CreateUserValidator" />
+<bean id="loginUserValidator" class="com.diaspark.validator.LoginUserValidator" />
+<bean id="productValidator" class="com.diaspark.validator.ProductValidator" />-->
+
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+ <property name="prefix" value="/WEB-INF/jsp/" /> 
+<property name="suffix" value=".jsp" />
+ </bean>
+
+</beans>
