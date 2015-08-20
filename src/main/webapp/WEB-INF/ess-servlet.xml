@@ -22,20 +22,6 @@
 
 <bean id="questionValidator" class="com.ess.validator.QuestionValidator" />
 
-<!-- <context:component-scan base-package="com.diaspark.controller" />
-<context:component-scan base-package="com.diaspark.controller.impl" />
-<context:component-scan base-package="com.diaspark.service" />
-<context:component-scan base-package="com.diaspark.service.impl" />
-<context:component-scan base-package="com.diaspark.dao" />
-<context:component-scan base-package="com.diaspark.dao.impl" /> -->
-<!--<context:component-scan base-package="com.diaspark.entity" />
-
---><!--<context:component-scan base-package="com.diaspark.domainobject" />
-
-<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" p:basename="messages" /> 
-<bean id="createUserValidator" class="com.diaspark.validator.CreateUserValidator" />
-<bean id="loginUserValidator" class="com.diaspark.validator.LoginUserValidator" />
-<bean id="productValidator" class="com.diaspark.validator.ProductValidator" />-->
 
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
  <property name="prefix" value="/WEB-INF/jsp/" /> 
