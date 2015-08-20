@@ -129,11 +129,7 @@
       <version>1.3.1</version>
     </dependency>
 
-    <!-- Support for testing Spring applications with tools such as JUnit and TestNG 
-      This artifact is generally always defined with a 'test' scope for the integration 
-      testing framework and unit testing stubs -->
-    <!-- dependency> <groupId>org.springframework</groupId> <artifactId>spring-test</artifactId> 
-      <version>${org.springframework.version}</version> <scope>test</scope> </dependency -->
+  
 
     <!-- Spring Security Dependencies -->
     <dependency>
@@ -201,7 +197,7 @@
       <version>1.2.6</version>
     </dependency>
 
-    <!-- My Sql Driver Dependencies -->
+    <!-- MySql Driver Dependencies -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
@@ -326,35 +322,6 @@
       <artifactId>apns</artifactId>
       <version>0.1.6</version>
     </dependency>
-
-<!--    <dependency>-->
-<!--      <groupId>com.timerazor.common</groupId>-->
-<!--      <artifactId>tRCommon</artifactId>-->
-<!--      <version>1.0.0-SNAPSHOT</version>-->
-<!--    </dependency>-->
-
-    <dependency>
-      <groupId>com.askgeo</groupId>
-      <artifactId>askgeo</artifactId>
-      <version>1.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi</artifactId>
-      <version>3.8</version>
-    </dependency>
-    <dependency>
-      <groupId>com.thoughtworks.xstream</groupId>
-      <artifactId>xstream</artifactId>
-      <version>1.4.3</version>
-    </dependency>
-    <dependency>
-      <groupId>xerces</groupId>
-      <artifactId>xerces</artifactId>
-      <version>1.2.3</version>
-    </dependency>
-    
     
   </dependencies>
   <build>
